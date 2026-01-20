@@ -1,0 +1,34 @@
+Use Multi-Factor Authentication (MFA)
+Combine at least two factors (password + OTP/biometric) to add extra security.
+
+Enforce Strong Password Policies
+
+Minimum length (12–16 characters)
+
+Mix of letters, numbers, and symbols
+
+Avoid common or reused passwords
+
+Use Secure Password Hashing
+Store passwords using bcrypt, Argon2, or PBKDF2 with salting and key stretching.
+
+Implement Account Lockout and Rate Limiting
+Temporarily lock accounts or slow login attempts after multiple failures.
+
+Use Biometric Authentication Where Possible
+Fingerprint or facial recognition provides stronger identity verification.
+
+Enable Password Managers
+Encourage users to generate and store complex, unique passwords securely.
+
+Protect Against Phishing
+Use MFA, user awareness training, and phishing-resistant authentication methods.
+
+Regularly Update and Monitor Systems
+Apply security patches and monitor login activity for suspicious behavior.
+
+Use Secure Communication Channels
+Ensure authentication data is transmitted over HTTPS/TLS.
+
+Apply the Principle of Least Privilege
+Grant users only the access necessary for their roles.
