@@ -1,0 +1,75 @@
+Weak Hashing Using a Wordlist (Dictionary Attack)
+
+A wordlist attack works when passwords are hashed using weak or fast hash algorithms (like MD5 or SHA-1) without salt.
+
+Attackers don’t “crack” the hash directly — they:
+
+Take a list of common passwords (wordlist)
+
+Hash each word using the same algorithm
+
+Compare the result with the stored hash
+
+If it matches → password is found
+
+Example Scenario (Weak System ❌)
+
+Hash algorithm: MD5
+
+Salt: None
+
+Stored hash:
+
+5f4dcc3b5aa765d61d8327deb882cf99
+
+
+This hash corresponds to:
+
+password
+
+
+An attacker can find this instantly using a wordlist.
+
+Example: Weak Hashing with Wordlist (Python Demo)
+
+
+import hashlib
+
+# Weak hash stored in database (MD5 of "password")
+stored_hash = "5f4dcc3b5aa765d61d8327deb882cf99"
+
+# Simple wordlist
+wordlist = ["123456", "admin", "password", "qwerty"]
+
+for word in wordlist:
+    hash_word = hashlib.md5(word.encode()).hexdigest()
+    if hash_word == stored_hash:
+        print("Password found:", word)
+        break
+
+Output:
+Password found: password
+
+Why This Works ❌
+
+MD5 is fast
+
+No salt is used
+
+Common passwords exist in wordlists
+
+Attackers can test millions per second
+
+Why Strong Hashing Stops This ✅
+
+Strong algorithms like bcrypt or Argon2:
+
+Use unique salts
+
+Are slow
+
+Require high CPU/memory
+
+Make wordlist attacks impractical
+
+Even if the attacker has the wordlist, matching becomes extremely difficult.
