@@ -1,0 +1,92 @@
+brute force attack is a method where an attacker systematically tries all possible combinations of passwords or keys until the correct one is found. It relies on computing power rather than intelligence or wordlists.
+
+How a Brute Force Attack Works
+
+Attacker selects a target account or password hash
+
+All possible character combinations are generated
+(e.g., a–z, A–Z, 0–9, symbols)
+
+Each combination is tested one by one
+
+When a match is found, access is gained
+
+Example
+
+If a password is 4 characters long using only lowercase letters:
+
+Total combinations = 
+26
+4
+=
+456
+,
+976
+26
+4
+=456,976
+
+A computer can try these very quickly
+
+Longer passwords increase difficulty exponentially.
+
+Types of Brute Force Attacks
+
+Simple brute force – tries every possible combination
+
+Hybrid attack – brute force + wordlist (e.g., password123)
+
+Credential stuffing – uses leaked username/password pairs
+
+Reverse brute force – tries one password against many accounts
+
+Why Brute Force Attacks Succeed
+
+Short or simple passwords
+
+No login attempt limits
+
+Fast hash algorithms
+
+Weak or no password policies
+
+Prevention Techniques
+
+Use long, complex passwords
+
+Implement account lockout or rate limiting
+
+Use strong password hashing (bcrypt, Argon2)
+
+Enable multi-factor authentication (MFA)
+
+Add CAPTCHAs after failed attemptsBrute Force Attack vs Dictionary Attack
+Feature	Brute Force Attack	Dictionary Attack
+Definition	Tries all possible character combinations	Tries passwords from a predefined wordlist
+Approach	Exhaustive and systematic	Selective and intelligent
+Speed	Very slow for long passwords	Faster than brute force
+Password Knowledge	No prior knowledge needed	Uses common or leaked passwords
+Effectiveness	Guaranteed success if time allows	Only works if password is in the list
+Computational Cost	Very high	Moderate
+Example	aaaa → aaab → aaac …	password, admin, 123456
+Best Against	Short, simple passwords	Common or reused passwords
+Key Differences in Simple Words
+
+Brute force = try everything
+
+Dictionary = try likely passwords
+
+Prevention (Both Attacks)
+
+Long and complex passwords
+
+Strong password hashing (bcrypt, Argon2)
+
+Account lockout / rate limiting
+
+Multi-factor authentication (MFA)
+
+Exam-Ready Summary
+
+A brute force attack attempts all possible password combinations, while a dictionary attack uses a list of commonly used passwords. Brute force is more time-consuming but guarantees success, whereas dictionary attacks are faster but limited to the words in the list.
+
