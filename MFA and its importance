@@ -1,0 +1,53 @@
+Multi-Factor Authentication (MFA) and Its Importance
+
+Multi-Factor Authentication (MFA) is a security mechanism that requires users to verify their identity using two or more independent factors before gaining access to a system. It adds extra layers of protection beyond just a username and password.
+
+Types of Authentication Factors
+
+MFA typically combines factors from different categories:
+
+Something you know
+
+Password, PIN
+
+Something you have
+
+OTP (One-Time Password), smart card, mobile phone, security token
+
+Something you are
+
+Fingerprint, face recognition, iris scan
+
+How MFA Works
+
+User enters username and password
+
+System requests an additional factor (e.g., OTP or biometric)
+
+Access is granted only if all factors are verified
+
+Importance of MFA
+
+Protects against stolen passwords
+Even if a password is compromised, attackers cannot log in without the second factor.
+
+Reduces brute force and dictionary attacks
+Additional verification blocks automated login attempts.
+
+Prevents phishing attacks
+Stolen credentials alone are not enough to access accounts.
+
+Enhances data security
+Protects sensitive information in banking, healthcare, and corporate systems.
+
+Meets compliance requirements
+Required by many security standards and regulations.
+
+Real-World Examples of MFA
+
+ATM card + PIN
+
+Online banking password + OTP
+
+Phone unlock using PIN + fingerprint
+
