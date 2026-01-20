@@ -1,0 +1,79 @@
+. Cryptographic Hash Functions (General-Purpose)
+
+These are designed to be fast and produce a fixed-length output.
+
+Examples:
+
+MD5 ❌ (broken, insecure)
+
+SHA-1 ❌ (broken)
+
+SHA-256 / SHA-512 ⚠️ (secure for integrity, not ideal for passwords)
+
+Use case:
+✔ File integrity, digital signatures
+❌ Password storage (too fast, vulnerable to brute-force attacks)
+
+2. Password Hashing Functions (Recommended)
+
+These are slow, resource-intensive, and resistant to brute-force and GPU attacks.
+
+Examples:
+
+bcrypt
+
+Argon2 (best practice, winner of Password Hashing Competition)
+
+scrypt
+
+PBKDF2
+
+Use case:
+✔ Secure password storage
+✔ Built-in salting and key stretching
+
+3. Keyed Hashing (HMAC)
+
+Uses a secret key along with the hash function.
+
+Examples:
+
+HMAC-SHA256
+
+HMAC-SHA512
+
+Use case:
+✔ Message authentication
+✔ API request signing
+❌ Not for storing user passwords
+
+4. Non-Cryptographic Hash Functions
+
+Designed for speed, not security.
+
+Examples:
+
+CRC32
+
+MurmurHash
+
+CityHash
+
+Use case:
+✔ Hash tables, checksums
+❌ Security or password hashing
+
+5. Adaptive Hashing
+
+Adjusts difficulty over time as hardware improves.
+
+Examples:
+
+bcrypt (work factor)
+
+Argon2 (memory + time cost)
+
+PBKDF2 (iteration count)
+
+Use case:
+✔ Long-term password protection
